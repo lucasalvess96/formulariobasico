@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+#page-login{
+    width: 100vw;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") no-repeat center center fixed;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #FFF;
+}
+
+.form-edition{
+    width: 100vw;
+    height: 60vh;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input-field input{
+    position: relative;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    font-size: 0.9rem;
+    outline: none;
+    border: 0;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);;
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    max-width: 250px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    max-width: 250px;
+    background: linear-gradient(45deg, #8E2DE2, #4A00E0);
+    transform: scaleX(0);
+    transition:  all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.btn{
+    width: 100vw;
+    max-width: 250px;
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4A00E0;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #450abb;
+}
