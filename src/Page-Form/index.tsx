@@ -17,11 +17,17 @@ function PageForm(){
             nome, email, numero, senha, confsenha
         ]
 
+        if(senha == confsenha){
+            history.push("/PageBasic")
+        }else{
+            alert("As senhas não são iguais")
+        }
+
         alert(date)
-        history.push("/PageBasic")
     }
 
     const history = useHistory()
+
     return(
        <div id="page-login">
            <div className="page-one">
